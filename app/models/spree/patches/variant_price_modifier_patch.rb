@@ -19,7 +19,7 @@ module Spree
         end
       }.sum
     end
-    deprecate :price_modifier_amount_in, deprecator: Spree::Deprecation
+    # deprecate :price_modifier_amount_in, deprecator: Spree::Deprecation
 
     # Calculates the sum of the specified price modifiers.
     #
@@ -38,6 +38,6 @@ module Spree
         end
       }.sum
     end
-    deprecate :price_modifier_amount, deprecator: Spree::Deprecation
+    # deprecate :price_modifier_amount, deprecator: Spree::Deprecation
   end
 end
