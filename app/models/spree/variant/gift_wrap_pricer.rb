@@ -1,6 +1,6 @@
 module Spree
   class Variant
-    class GiftWrapPricer < Spree::Variant::Pricer
+    class GiftWrapPricer < Spree::Variant::PriceSelector
       def self.pricing_options_class
         Spree::Variant::GiftWrapPricingOptions
       end
