@@ -57,13 +57,13 @@ describe Spree::Variant::GiftWrapPricingOptions do
     context "if the order is in RUB" do
       let(:currency) { "RUB" }
 
-      it { is_expected.to eq({ currency: "RUB" }) }
+      it { is_expected.to include({ currency: "RUB" }) }
     end
 
     context "if gift wrap is false" do
       let(:currency) { "EUR" }
 
-      it { is_expected.to eq({ currency: "EUR" }) }
+      it { is_expected.to include({ currency: "EUR" }) }
     end
   end
 end

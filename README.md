@@ -35,7 +35,7 @@ end
 
 ```ruby
 Spree.config do |config|
-  config.variant_pricer_class = Spree::Variant::GiftWrapPricer
+  config.variant_price_selector_class = Spree::Variant::GiftWrapPricer
 end
 ```
 

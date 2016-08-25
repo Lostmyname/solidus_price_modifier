@@ -23,7 +23,7 @@ describe Spree::Variant::GiftWrapPricer do
   end
 
   before :each do
-    Spree::Config.variant_pricer_class = described_class
+    Spree::Config.variant_price_selector_class = described_class
   end
 
   describe '.pricing_options_class' do
